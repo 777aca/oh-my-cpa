@@ -12,13 +12,13 @@ services:
       - '127.0.0.1:18317:8080'
     environment:
       TZ: ${TZ:-UTC}
-      OMCPA_BASE_PATH: /omc
+      OMCPA_BASE_PATH: /
       OMCPA_DATA_DIR: /data
       OMCPA_DEFAULT_LANGUAGE: zh
       OMCPA_CPA_BASE_URL: http://cpa:8317
       OMCPA_CPA_MANAGEMENT_KEY: ${OMCPA_CPA_MANAGEMENT_KEY:?required}
       OMCPA_MASTER_KEY: ${OMCPA_MASTER_KEY:?required}
-      OMCPA_PUBLIC_URL: https://cpa.axoai.cc/omc
+      OMCPA_PUBLIC_URL: https://cpa.axoai.cc
       OMCPA_TRUSTED_PROXY_CIDRS: 172.20.0.1/32
       OMCPA_USAGE_INGEST_MODE: subscribe
       OMCPA_UPDATE_CHECK_ENABLED: 'false'
